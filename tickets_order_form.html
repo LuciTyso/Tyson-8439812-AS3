@@ -42,7 +42,7 @@
 				<fieldset><!--This is the fieldset for the member information-->
 					<legend>Member Information</legend>
 					<label for="email">E-Mail:</label>
-					<input type="text" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" autofocus required><br> <!--Validating for a correct email-->
+					<input type="email" name="email" id="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" autofocus required><br> <!--Validating for a correct email-->
 					<label for="firstName">First Name:</label>
 					<input type="text" name="firstName" id="firstName" required><br>
 					<label for="lastName">Last Name:</label>
@@ -52,11 +52,11 @@
 					<label for="city">City:</label>
 					<input type="text" name="city" id="city" required><br>
 					<label for="province">Province:</label>
-					<input type="text" name="province" id="province" placeholder="2-character Code" pattern="[A-Za-z]{2}" title="Enter a 2-character code for your province."required><br> <!--Validating for a correct province code-->
+					<input type="text" name="province" id="province" placeholder="2-character Code" pattern="[A-Za-z]{2}" title="Enter a 2-character code for your province." maxlength="2" required><br> <!--Validating for a correct province code-->
 					<label for="postalCode">Postal Code:</label>
 					<input type="text" name="postalCode:" id="postalCode:" placeholder="6 Characters" pattern="[A-Za-z0-9]{6}" title="Postal Code must be alphaneumeric" required><br> <!--Adding validation for postal code-->
 					<label for="phoneNumber">Phone Number:</label>
-					<input type="text" name="phoneNumber" id="phoneNumber" placeholder="999-999-9999" pattern=“\d{3}[\-]\d{3}[\-]\d{4}” title="Formatting for Phone Number is: 999-999-9999"><br> <!--Phone number validation-->
+					<input type="tel" name="phoneNumber" id="phoneNumber" placeholder="999-999-9999" pattern=“\d{3}[\-]\d{3}[\-]\d{4}” title="Formatting for Phone Number is: 999-999-9999"><br> <!--Phone number validation-->
 				</fieldset>
 
 				<fieldset><!--This is the fieldset for the ordering information-->
@@ -75,7 +75,7 @@
 						<option value="singleTickets">Single Tickets</option>
 					</select><br>
 					<label for="numberOfTickets">Number Of Tickets:</label>
-					<input type="text" name="numberOfTickets" id="numberOfTickets" pattern="[0-9]{1}" placeholder="Number of Single Tickets"  title="Please fill out this field."required><br> <!--Adding validation to a correct number of tickets-->
+					<input type="number" name="numberOfTickets" id="numberOfTickets" pattern="[0-9]{1}" placeholder="Number of Single Tickets"  title="Please fill out this field."required><br> <!--Adding validation to a correct number of tickets-->
 				</fieldset>
 
 				<fieldset id="payment_method"><!--This is the fieldset for the payment method-->
